@@ -1,0 +1,27 @@
+<!DOCTYPE sitioWeb [
+  <!ELEMENT sitioWeb (noticias, tienda, consolas, usuarios, lanzamientos)>
+  <!ELEMENT noticias (noticia*)>
+  <!ELEMENT noticia (titulo, fecha, autor, contenido)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT contenido (#PCDATA)>
+  <!ELEMENT tienda (juego*)>
+  <!ELEMENT juego (titulo, plataforma, precio, enlace)>
+  <!ELEMENT plataforma (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT enlace (#PCDATA)>
+  <!ELEMENT consolas (consola*)>
+  <!ELEMENT consola (nombre, fabricante, lanzamiento, precio, enlace)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT fabricante (#PCDATA)>
+  <!ELEMENT lanzamiento (#PCDATA)>
+  <!ELEMENT usuarios (usuario*)>
+  <!ELEMENT usuario (nombre, apellido, correo, usuario, contrasena, hash)>
+  <!ELEMENT apellido (#PCDATA)>
+  <!ELEMENT correo (#PCDATA)>
+  <!ELEMENT contrasena (#PCDATA)>
+  <!ELEMENT hash (#PCDATA)>
+  <!ELEMENT lanzamientos (juego*)>
+  <!ELEMENT fechaLanzamiento (#PCDATA)>
+]>

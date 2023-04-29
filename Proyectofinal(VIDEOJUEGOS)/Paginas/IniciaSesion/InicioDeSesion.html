@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="Estilos/estilosgrid.css">
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+
+    <!-- Mi head sticky -->
+    <header id="hprincipal">
+        <div></div>
+        <div><a href="../PaginaPrincipal/index.html">Inicio</a></div>
+        <div><a href="https://www.3djuegos.com/lanzamientos/" target="_blank"> Lanzamientos</a></div>
+        <div><a href="../Noticias/noticias.html"> Noticias</a></div>
+        <div class="menu">Consolas
+            <div class="dropdown">
+              <a href="../Consolas/PS5.html">PlayStation</a>
+              <a href="../Consolas/Xbox.html">Xbox</a>
+              <a href="../Consolas/NintendoSwitch.html">Nintendo Switch</a>
+              <a href="../Consolas/Ordenador.html">Ordenador</a>
+            </div>
+          </div>
+        <div> <a href="https://www.game.es/" target="_blank"> Tienda</a></div>
+        <div><a href="InicioDeSesion.html">Inicia sesion</a></div>
+        <div></div>
+    </header >
+
+    <aside class="izquierda"></aside>
+  <!-- Mi seccion de noticias -->
+    <section>
+        <form action="mailto:jose23660969@gmail.com" method="post">
+            <div class="datospersonales">
+        <fieldset >
+            <legend>Datos personales</legend>
+            <p>Nombres :<input type="text" name="nombre" size="30"  placeholder="Escribe tus nombres" required="required" autofocus>Apellidos<input type="text" name="apellido" size="30" placeholder="Escribe tus apellidos" required="required"  > </p>
+            <p>Fecha de nacimineto <input type="date" name="FechaNac"> Lugar de nacimiento: <input type="text" size="30"></p>
+            <p>D.N.I: <input type="text" name="DNI" size="9" placeholder="DNI" pattern="[0-9]{8}[A-Z]{1}" required="required"> Sexo: <input  type="radio" name="hm" value="h">Hombre <input type="radio" name="hm" value="m">Mujer </p>
+            <p>Correo electronico: <input type="email" name="correo" size="30"> Web personal: <input type="url" name="webpersonal" size="30"></p>
+            <p>Telefono <input type="tel" name="telefono" size="10">Telefono Movil: <input type="tel" name="telefonomovil"></p>
+            <p>Contraseña : <input type="password" name="contraseña" placeholder="Contraseña" min="9" max="20" required="required" > Repetir contraseña <input type="password" name="contraseña" min="9" max="20" placeholder="Contraseña" required="required" ></p>
+        </fieldset>
+    </div>
+    <div class="todadireccion">
+        <fieldset >
+            <legend>Dirección</legend>
+            <p>Vía: <input type="text" name="via" list="via"> <datalist id="via"> 
+            <option value="Rúa"></option>
+            <option value="Avenida"></option>
+            <option value="Estrada"></option>
+            </datalist>
+                Dirección: <input type="text" name="direccion"> Nº: <input type="text" size="3" name="n"> Piso: <input type="text" name="piso" pattern="[0-12]{1}[A-Z]{1}"></p>
+            <p>C.P: <input type="text" name="cp" pattern="[0-9]{5}"> Poblacion <input type="text" name="poblacion">
+                Provincia: <select name="provincia" >
+                    <option selected="selected">- Seleccione una provincia </option>
+                    <optgroup label="Galicia">
+                        <option value="coruña">La Coruña</option>
+                        <option value="lugo">Lugo</option>
+                        <option value="ourense">Ourense</option>
+                        <option value="pontevedra">Pontevedra</option>
+                    </optgroup>
+                    <optgroup label="Euskadi">
+                        <option value="coruña">La Coruña</option>
+                        <option value="lugo">Lugo</option>
+                        <option value="ourense">Ourense</option>
+                        <option value="pontevedra">Pontevedra</option>
+                    </optgroup>
+                    <optgroup label="Extremadura">    
+                        <option value="araba">Araba Bizkaia</option>
+                        <option value="guipuzcoa">Guipúzcoa</option>
+                    </optgroup>
+                    <optgroup label="Euskadi">
+                        <option value="caceres">Cáceres</option>
+                        <option value="badajoz">Badajoz</option>
+                    </optgroup>
+                    <optgroup label="Cataluña">
+                        <option value="barcelona">Barcelona</option>
+                        <option value="tarragona">Tarragona</option>
+                        <option value="lleida">Lleida</option>
+                        <option value="girona">Girona</option>
+                    </optgroup>
+                    <optgroup label="Aragón">
+                        <option value="huesca">Huesca</option>
+                        <option value="zaragoza">Zaragoza</option>
+                        <option value="teruel">Teruel</option>
+                    </optgroup>
+                    <optgroup label="Navarra">
+                        <option value="navarra">Navarra</option>
+                    </optgroup>
+                    <optgroup label="Otro">
+                        <option value="otro">Otra Direcion</option>
+                    </optgroup>
+    
+                
+                </select> </p>
+            </div>
+    
+    
+    
+        </fieldset>
+        <div class="aficiones">
+        <fieldset >
+            <legend>Aficiones </legend>
+            <p> <input type= "checkbox" name="musica"> Musica <input type="checkbox" name="deportes">  Deportes <input type= "checkbox" name="naturaleza"> Naturaleza 
+                <input type="checkbox" name="videojuegos"> Videojuegos <input type= "checkbox" name="tecnologia"> Tecnología <input type="checkbox" name="cine"> Cine  </p>
+            <p> <input type="checkbox" name="manga"> Manga <input type= "checkbox" name="fotografiaaficion"> Fotografia 
+                
+                    <p>Otras aficiones:</p>
+                    <p>   
+                    <textarea name="otrasaficiones" rows="10" cols="40" placeholder="Escribe otras aficiones"></textarea>
+                 </p>
+        </fieldset>
+    </div>
+     <br>      
+     <div><input class="boton1" type="submit" value="Enviar datos" > <input class = "boton2" type="reset" value="Borrar datos"></div>
+     <div class="ytc">Ya tienes cuenta? <a href="AbrirSesion.html">Entra aqui</a></div>
+    
+    </section>
+        <aside></aside>
+<!--  El footer -->
+    <footer>
+        <div></div>
+        <div class="Videosjuego">Videojuegos Mas Populares 
+            <ul><li>God of War Ragnarok</li>
+            <li>Elden Ring </li>
+            <li>Zelda Breath Of The Wild</li>
+            <li>Resident Evil</li>
+        
+        <li>Grand Theft Auto V</li>
+            <li>FIFA 23</li>
+            <li>Mario: Odisey</li>
+            <li>Howard Legacy</li></ul></div>   
+        <div class="Consolas">Consolas<ul><li><a href="../Consolas/PS5.html"> PS5</a></li>
+            <li><a href="../Consolas/Xbox.html">Xbox Series X </a></li>
+            <li><a href="../Consolas/NintendoSwitch.html">Nintendo Switch</a></li>
+            <li><a href="../Consolas/Ordenador.html">Ordenador</a></li></ul></div>
+            <div class="noticia"> <a href="../Noticias/noticias.html">Noticias</a></div>
+        <div class="tienda"><a href="https://www.game.es/" target="_blank"> Tienda</a></div>
+        <div>
+            <a class="redessociales"><img src="../../Imagenes/Instagram.png"> </a>
+            <a class="redessociales"> <img src="../../Imagenes/facebook.png"> </a>
+           <a class="redessociales"> <img src="../../Imagenes/twitter.png"></a> 
+        </div>
+        <div class="copy">Copyright 2023 Todos los derechos reservados</div>
+  
+        <div></div>
+    </footer>
+
+    </div>
+</body>
+</html>

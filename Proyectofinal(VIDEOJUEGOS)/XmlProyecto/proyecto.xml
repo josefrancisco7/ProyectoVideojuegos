@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sitioWeb>
+  <noticias>
+    <noticia>
+      <titulo>...</titulo>
+      <fecha>...</fecha>
+      <autor>...</autor>
+      <contenido>...</contenido>
+    </noticia>
+    <!-- más noticias aquí -->
+  </noticias>
+  <tienda>
+    <juego>
+      <titulo>...</titulo>
+      <plataforma>...</plataforma>
+      <precio>...</precio>
+      <enlace>...</enlace>
+    </juego>
+    <!-- más juegos aquí -->
+  </tienda>
+  <lanzamientos>
+    <juego>
+      <titulo>...</titulo>
+      <fechaLanzamiento>...</fechaLanzamiento>
+      <plataforma>...</plataforma>
+      <precio>...</precio>
+      <enlace>...</enlace>
+    </juego>
+    <!-- más juegos aquí -->
+  </lanzamientos>
+  <consolas>
+    <consola>
+      <nombre>...</nombre>
+      <fabricante>...</fabricante>
+      <lanzamiento>...</lanzamiento>
+      <precio>...</precio>
+      <enlace>...</enlace>
+    </consola>
+    <!-- más consolas aquí -->
+  </consolas>
+  <usuarios>
+    <usuario>
+      <nombre>...</nombre>
+      <apellido>...</apellido>
+      <correo>...</correo>
+      <usuario>...</usuario>
+      <contrasena>...</contrasena>
+      <hash>...</hash>
+    </usuario>
+    <!-- más usuarios aquí -->
+  </usuarios>
+</sitioWeb>

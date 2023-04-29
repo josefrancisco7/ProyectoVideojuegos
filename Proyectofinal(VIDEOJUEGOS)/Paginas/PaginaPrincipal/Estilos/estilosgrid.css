@@ -1,0 +1,259 @@
+
+/* Menu desplegable*/
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: black;
+  border: red solid 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu:hover .dropdown{
+  display: block;
+  top: 19px;
+  left :-65px;
+
+}
+
+*{
+      box-sizing: border-box;
+      margin: 0.5em;     
+  }
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+  section{
+    display: grid;
+    width: 100%;
+    grid-template-columns:17% 17% 17% 17% 30%;
+     grid-template-rows: 1fr 1fr; 
+    justify-content: center;
+    grid-template-areas: 
+                  "article1 article1 article1 article2 article2"
+                  "article3 article3 article4 article4 article5" ;
+                  background:linear-gradient(red, black , red,black);
+  
+  }
+  
+
+section article img{
+  margin: 0;
+  width: 100%;
+}
+
+aside{
+  grid-area: aside1;
+  background-color: white;
+}
+.izquierda{
+  grid-area: aside;
+  background-color: white;
+}
+
+#contenedor > header{
+  width: 100%;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(253, 4, 4);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+  header > div{
+    color: white;
+    padding-right: 0% ;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 2vw;    
+  }
+
+ /* esto es para los link no tenga nada predeteminado*/
+  a:link, a:visited, a:active{
+    text-decoration:none;
+    color: white;
+  }
+/*estilo para los enlances para cuando me posiciones sobre elllos*/
+  a:hover{
+    color: red;
+    transition: transform .2s; 
+    transform: scale(1.05); 
+}
+
+/*estilo para las lista y otros para cuando me posiciones sobre elllos*/
+li:hover  ,.noticia:hover, .tienda:hover , header div:hover{
+    color: red;
+    cursor: pointer;;
+    transition: transform .2s; 
+    transform: scale(1.05); 
+
+ }
+
+  section{
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(253, 4, 4);
+  }
+
+
+  section >article:nth-of-type(1){
+  grid-area: article1;
+}
+section > article:nth-of-type(2){
+  grid-area: article2;
+}
+section > article:nth-of-type(3){
+  grid-area: article3;
+}
+section > article:nth-of-type(4){
+  grid-area: article4;
+}
+section > article:nth-of-type(5){
+  grid-area: article5;
+}
+
+
+
+/*imagenes de las redes sociales */
+/*Todo lo que contiene el footer*/
+  a.redessociales img{ 
+    width:5%; 
+    height: 5%;
+    
+   }  
+ 
+   .noticia, .tienda{
+    font-size: 2vw;
+      display: inline-block;
+      text-align: center;
+    }
+   li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+    padding-right: 10%;
+  }
+
+  .copy{
+    display: flex;
+   flex-direction: column ;
+  }
+
+  #contenedor >  footer{ 
+    margin: auto;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(253, 4, 4);
+    text-align: center;
+    font-size: 1vw;
+  }
+
+  footer > div{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
+  }
+
+/*colocarte sobre las imagenes de redes sociales*/
+   a.redessociales:hover img{
+    cursor: pointer;
+    transition: transform .4s; 
+    transform: scale(1.1); 
+    
+   }
+
+
+  /* Noticia 1 del section*/
+.noticia1{
+  height: 100%;
+  width: 95%;
+ 
+}
+
+/* Noticia 2 del section*/
+.noticia2{
+  height:100%; 
+  width: 95%;
+}
+
+ /* Noticia 3 del section*/
+ .noticia3{
+  width: 95%;
+  height: 100%;
+}
+
+/* Noticia 4 del section*/
+.noticia4{
+  width: 95%;
+  height: 100%;
+}
+
+/* Noticia 5 del section*/
+.noticia5{
+  width: 95%;
+  height: 100%;
+}
+
+/*posicionarse sobre las noticias*/
+.noticia1:hover , .noticia2:hover , .noticia3:hover , .noticia4:hover , .noticia5:hover{
+transition: transform .2s; 
+transform: scale(1.03);    
+}
+
+@media (max-width: 1000px){
+
+section{  
+  display: grid;
+  width: 100%;
+  grid-template-columns:90%;
+  justify-content: center;
+  grid-template-areas: 
+                "article1"
+                "article2" 
+                "article3"
+                "article4"
+                "article5";
+
+} 
+#contenedor > footer{
+  font-size: 1.5vw;
+}
+.noticia, .tienda{
+  font-size: 2.5vw;
+    display: inline-block;
+  
+  }
+  header > div{
+    font-size: 2.5vw;    
+  }
+  ul{
+    padding: 0;
+  }
+}

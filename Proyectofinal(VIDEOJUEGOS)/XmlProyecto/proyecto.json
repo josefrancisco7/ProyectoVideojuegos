@@ -1,0 +1,64 @@
+{
+    "sitioWeb": {
+      "noticias": {
+        "noticia": [
+          {
+            "titulo": "...",
+            "fecha": "...",
+            "autor": "...",
+            "contenido": "..."
+          }
+          // más noticias aquí
+        ]
+      },
+      "tienda": {
+        "juego": [
+          {
+            "titulo": "...",
+            "plataforma": "...",
+            "precio": "...",
+            "enlace": "..."
+          }
+          // más juegos aquí
+        ]
+      },
+      "lanzamientos": {
+        "juego": [
+          {
+            "titulo": "...",
+            "fechaLanzamiento": "...",
+            "plataforma": "...",
+            "precio": "...",
+            "enlace": "..."
+          }
+          // más juegos aquí
+        ]
+      },
+      "consolas": {
+        "consola": [
+          {
+            "nombre": "...",
+            "fabricante": "...",
+            "lanzamiento": "...",
+            "precio": "...",
+            "enlace": "..."
+          }
+          // más consolas aquí
+        ]
+      },
+      "usuarios": {
+        "usuario": [
+          {
+            "nombre": "...",
+            "apellido": "...",
+            "correo": "...",
+            "usuario": "...",
+            "contrasena": "...",
+            "hash": "..."
+          }
+          // más usuarios aquí
+        ]
+      }
+    }
+  }
+  

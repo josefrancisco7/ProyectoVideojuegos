@@ -1,0 +1,190 @@
+  header.bajo , section , footer {
+    margin: 0px auto;
+    width: 80% ;
+  } 
+
+*{
+      box-sizing: border-box;
+      margin: 0.5em;     
+  }
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+/* .contenedor{  grid-template-columns: 20% 20% 20%  20% 20%;
+  grid-template-rows: 100px 100px 400px 300px 100px;
+  grid-template-areas: "head head head head head"
+               "nav nav nav nav nav"
+                "main main main main main"
+                "article1 article2 article3 article4 article5"
+                "footer footer footer footer footer";
+  margin: 20px auto;
+  width: 90%;
+}  */
+
+
+#hprincipal{ 
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    border: 1px solid rgb(253, 4, 4);
+    width: 100%; 
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+           
+
+  }
+  header div{
+    display: none;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    padding-right: 7% ;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+  }
+
+  a:link, a:visited, a:active{
+    text-decoration:none;
+    color: white;
+  }
+
+/*estilo para los enlances*/
+  a:hover{
+    color: red;
+    transition: transform .2s; 
+    transform: scale(1.05); 
+}
+
+li:hover  ,.noticia:hover, .tienda:hover , header div:hover{
+    color: red;
+    cursor: pointer;;
+    transition: transform .2s; 
+    transform: scale(1.05); 
+
+ }
+
+  section{
+      height: 80em ;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(253, 4, 4);
+  }
+
+  footer{ 
+      height: 15em;
+      background-color: rgb(2, 2, 2);
+      clear: both;
+      border: 1px solid rgb(253, 4, 4);
+  }
+
+  footer div{
+    display: inline-block;
+    color: white;
+    padding-left: 2em;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 2px;
+    font-size: 1em;
+
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 5px;
+  }
+
+  .copy{
+    display: block;
+    position: relative;
+    bottom: 1em;
+  }
+
+/*imagenes de las redes sociales*/
+  a.redessociales img{ 
+    width:4em; 
+    height: 4em;
+    margin: 0.5em;
+   float: left;
+   position: relative;
+   left: 3em;
+   bottom: 5em;
+   } 
+
+   a.redessociales:hover img{
+    cursor: pointer;
+    transition: transform .4s; 
+    transform: scale(1.1); 
+   }
+
+  .noticia, .tienda{
+    position: relative;
+    font-size: 1.5em;
+   bottom: 2em;
+    
+  }
+ 
+  /* Noticia 1 del section*/
+.noticia1{
+  position: relative;
+  top: 3% ;
+  left: 2%;
+  float: left;
+  padding-left: 5px;
+  height: 50%;
+  width: 45%;
+  
+}
+
+/* Noticia 2 del section*/
+.noticia2{
+  position: relative;
+  top: 3% ;
+  left: 5%;
+  float: left;
+  height:50%; 
+  width: 45%;
+}
+
+ /* Noticia 3 del section*/
+ .noticia3{
+  position: relative;
+  left: 2em;
+  top: 2%;
+  float: left;
+  padding-top: 4em;
+  width: 30%;
+  height: 40%;
+}
+
+/* Noticia 4 del section*/
+.noticia4{
+  position: relative;
+  left: 3%;
+  top: 7%;
+  float: left;
+  width: 30%;
+  height: 36%;
+}
+
+/* Noticia 5 del section*/
+.noticia5{
+  position: relative;
+  left: 4%;
+  top: 7%;
+  float: left;
+  width: 30%;
+  height: 35%;
+}
+
+.noticia1:hover , .noticia2:hover , .noticia3:hover , .noticia4:hover , .noticia5:hover{
+transition: transform .2s; 
+transform: scale(1.05);    
+}
+
